@@ -42,7 +42,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
                     label: 'Click to Proceed',
                 },
             ],
-            image: `https://i.imgur.com/whKwtBW.png?mode=crop&crop=faces&ar=2:1?width=1920&q=75`,
+            image: `https://i.imgur.com/tNdYstN.jpeg?mode=crop&crop=faces&ar=2:1?width=1920&q=75`,
             post_url: `${process.env.NEXT_PUBLIC_BASE_URL}/api/frames/selected-options`,
         })
     );

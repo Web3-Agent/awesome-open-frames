@@ -9,7 +9,7 @@ const frameMetadata = getFrameMetadata({
             label: "Cast & Start",
         },
     ],
-    image: `https://images.yourstory.com/cs/2/ba6b0930e8cd11edbf1c2f9de7fdeb77/Images44m-1684388550673.jpg?mode=crop&crop=faces&ar=2:1?width=1920&q=75`,
+    image: `https://i.imgur.com/dZLn1s3.jpeg`,
     postUrl: `${process.env.NEXT_PUBLIC_BASE_URL}/api/frames/account`,
 });
 

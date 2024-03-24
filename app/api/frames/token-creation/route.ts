@@ -29,7 +29,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
                         label: 'Click to Proceed',
                     },
                 ],
-                image: `https://images.yourstory.com/cs/2/ba6b0930e8cd11edbf1c2f9de7fdeb77/Images44m-1684388550673.jpg?mode=crop&crop=faces&ar=2:1?width=1920&q=75`,
+                image: `https://i.imgur.com/EkN49WI.jpeg`,
                 post_url: `${process.env.NEXT_PUBLIC_BASE_URL}/api/frames/token-creation`,
             })
         );
@@ -47,26 +47,34 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
     }`
     const base = toBase64(code)
     const link = `https://remix.ethereum.org/?#code=${base}&autoCompile=true&lang=en&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.20+commit.a1b79de6.js`
-    const downloadLink = `http://localhost:3000/api/frames/download?code=${code}`
-
+    const downloadLink = `${process.env.NEXT_PUBLIC_BASE_URL}/frames/download?code=${code}`
+    const startlink= `${process.env.NEXT_PUBLIC_BASE_URL}`
     return new NextResponse(
         getFrameHtmlResponse({
             buttons: [
                 {
                     label: 'Start Again!',
+                    action: "link",
+                    target: startlink
                 },
                 {
                     label: 'Hardhat',
                     action: "link",
                     target: downloadLink
                 },
+
                 {
                     label: 'Remix',
                     action: 'link',
                     target: link
                 },
+                {
+                    label: 'Deploy',
+                    action: "link",
+                    target: downloadLink
+                }
             ],
-            image: `https://i.imgur.com/EkN49WI.jpeg`,
+            image: `https://i.imgur.com/0cyZGGt.jpeg`,
             post_url: `${process.env.NEXT_PUBLIC_BASE_URL}/start`,
         })
     );
