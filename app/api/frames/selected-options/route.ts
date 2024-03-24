@@ -65,7 +65,7 @@ export async function POST(req: NextRequest): Promise<NextResponse | undefined> 
                             label: `Invalid Input, Try Again!`,
                         },
                     ],
-                    image: `https://images.yourstory.com/cs/2/ba6b0930e8cd11edbf1c2f9de7fdeb77/Images44m-1684388550673.jpg?mode=crop&crop=faces&ar=2:1?width=1920&q=75`,
+                    image: `https://i.imgur.com/tNdYstN.jpeg`,
                     post_url: `${process.env.NEXT_PUBLIC_BASE_URL}/api/frames/account`,
                 })
             )

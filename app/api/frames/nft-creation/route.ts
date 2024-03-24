@@ -73,7 +73,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
                     target: link
                 },
             ],
-            image: `https://cdn.pixabay.com/photo/2019/12/03/07/34/gift-4669449_1280.jpg`,
+            image: `https://i.imgur.com/2fYh26o.jpeg`,
             post_url: `${process.env.NEXT_PUBLIC_BASE_URL}/start`,
         })
     );
