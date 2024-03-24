@@ -5,7 +5,7 @@ import React from "react";
 const frameMetadata = getFrameMetadata({
     buttons: [
         {
-            label: "Cast & Start",
+            label: "Recast & Start",
         },
     ],
     image: `https://i.imgur.com/dZLn1s3.jpeg`,

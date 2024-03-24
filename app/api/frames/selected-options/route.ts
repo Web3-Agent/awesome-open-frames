@@ -31,7 +31,7 @@ export async function POST(req: NextRequest): Promise<NextResponse | undefined> 
                             label: 'Click to Proceed',
                         },
                     ],
-                    image: `https://i.imgur.com/dZLn1s3.jpeg`,
+                    image: `https://i.imgur.com/EkN49WI.jpeg`,
                     post_url: `${process.env.NEXT_PUBLIC_BASE_URL}/api/frames/token-creation`,
                 })
             );
@@ -46,7 +46,7 @@ export async function POST(req: NextRequest): Promise<NextResponse | undefined> 
                             label: 'Click to Proceed',
                         },
                     ],
-                    image: `https://i.imgur.com/dZLn1s3.jpeg`,
+                    image: `https://i.imgur.com/2fYh26o.jpeg`,
                     post_url: `${process.env.NEXT_PUBLIC_BASE_URL}/api/frames/nft-creation`,
                 })
             );

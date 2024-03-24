@@ -10,27 +10,27 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
     const { isValid, message } = await getFrameMessage(body);
 
 
-    // if (!isValid) {
-    //     return new NextResponse("Invalid Frame message", { status: 400 });
-    // }
+    if (!isValid) {
+        return new NextResponse("Invalid Frame message", { status: 400 });
+    }
 
-    // if (!message) {
-    //     return new NextResponse("Invalid Frame message", { status: 400 });
-    // }
+    if (!message) {
+        return new NextResponse("Invalid Frame message", { status: 400 });
+    }
 
-    // if (!message.recasted) {
-    //     return new NextResponse(
-    //         getFrameHtmlResponse({
-    //             buttons: [
-    //                 {
-    //                     label: `Recast & Try Again`,
-    //                 },
-    //             ],
-    //             image: `https://i.imgur.com/dZLn1s3.jpeg`,
-    //             post_url: `${process.env.NEXT_PUBLIC_BASE_URL}/api/frames/account`,
-    //         })
-    //     );
-    // }
+    if (!message.recasted) {
+        return new NextResponse(
+            getFrameHtmlResponse({
+                buttons: [
+                    {
+                        label: `Recast & Try Again`,
+                    },
+                ],
+                image: `https://i.imgur.com/dZLn1s3.jpeg`,
+                post_url: `${process.env.NEXT_PUBLIC_BASE_URL}/api/frames/account`,
+            })
+        );
+    }
 
     return new NextResponse(
         getFrameHtmlResponse({
