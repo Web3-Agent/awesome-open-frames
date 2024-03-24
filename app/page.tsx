@@ -20,7 +20,7 @@ export const metadata: Metadata = {
         title: "Web3Agent Token's Frames",
         description: "Re-define the Experience",
         images: [
-            `https://images.yourstory.com/cs/2/ba6b0930e8cd11edbf1c2f9de7fdeb77/Images44m-1684388550673.jpg?mode=crop&crop=faces&ar=2:1?width=1920&q=75`,
+            `https://i.imgur.com/dZLn1s3.jpeg`,
         ],
     },
     other: {

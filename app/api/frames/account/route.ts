@@ -10,13 +10,13 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
     const { isValid, message } = await getFrameMessage(body);
 
 
-    if (!isValid) {
-        return new NextResponse("Invalid Frame message", { status: 400 });
-    }
+    // if (!isValid) {
+    //     return new NextResponse("Invalid Frame message", { status: 400 });
+    // }
 
-    if (!message) {
-        return new NextResponse("Invalid Frame message", { status: 400 });
-    }
+    // if (!message) {
+    //     return new NextResponse("Invalid Frame message", { status: 400 });
+    // }
 
     // if (!message.recasted) {
     //     return new NextResponse(
