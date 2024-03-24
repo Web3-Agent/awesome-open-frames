@@ -14,7 +14,7 @@ const frameMetadata = getFrameMetadata({
 
 export const metadata: Metadata = {
     title: "Web3Agent Token's Frames",
-    description: "Re-define the Experience",
+    description: "AI power : Re-define the Experience",
     openGraph: {
         title: "Web3Agent Token's Frames",
         description: "Re-define the Experience",
