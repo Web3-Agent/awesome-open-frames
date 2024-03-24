@@ -1,4 +1,3 @@
-
 import { getFrameMetadata } from "@coinbase/onchainkit";
 import type { Metadata } from "next";
 import React from "react";
@@ -27,10 +26,11 @@ export const metadata: Metadata = {
         ...frameMetadata,
     },
 };
+
 export default function Page() {
-  return (
-    <>
-      <img src={'https://i.imgur.com/pBbfHQ7.png'} />
-    </>
-  );
+    return (
+        <>
+            <h1>Web3Agent Frame Creation</h1>
+        </>
+    );
 }
